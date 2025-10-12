@@ -1,37 +1,33 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 import Link from 'next/link';
-import './globals.css';
 
-export const metadata = {
-  title: 'D&D Mobile Services TX | Auto, Detailing, Landscaping in Montgomery County',
-  description: 'Proudly Texas: Residential & Commercial Mobile Pros—Repairs, Gleam, Oasis.',
-  keywords: 'mobile auto repair The Woodlands TX, commercial landscaping Kingwood, fleet detailing Montgomery County',
-  openGraph: {
-    type: 'website',
-    siteName: 'DDMobileTX',
-    title: 'D&D Mobile Services TX',
-    description: 'Auto repairs, Supreme Gleam detailing, Thriving Oasis landscaping—TX strong for homes & businesses.',
-    locale: 'en_US',
-  },
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "D&D Mobile Services TX",
+  description: "Texas-Proud Mobile Mastery—Auto, Detailing, Landscaping for Homes & Businesses in Montgomery County.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-800">
-        <nav className="bg-teal-600 text-white p-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">D&D Mobile Services TX</h1>
-          <ul className="flex space-x-4">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/services">Services</Link></li>
-            <li><Link href="/commercial">Commercial</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+      <body className={inter.className}>
+        <nav className="bg-emerald-600 text-white p-4">
+          <ul className="flex space-x-4 justify-center">
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/services" className="hover:underline">Services</Link></li>
+            <li><Link href="/commercial" className="hover:underline">Commercial</Link></li>
+            <li><Link href="/about" className="hover:underline">About</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
           </ul>
         </nav>
         {children}
-        <footer className="bg-emerald-700 text-white p-4 text-center">
-          © 2025 D&D Mobile Services TX | Kingwood, The Woodlands, Montgomery County Proud
-        </footer>
       </body>
     </html>
   );
