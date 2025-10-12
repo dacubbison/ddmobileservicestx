@@ -1,4 +1,5 @@
 import { DefaultSeo } from 'next-seo';
+import Link from 'next/link';
 import './globals.css';
 
 export const metadata = {
@@ -19,11 +20,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="bg-teal-600 text-white p-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">D&D Mobile Services TX</h1>
           <ul className="flex space-x-4">
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/commercial">Commercial</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/commercial">Commercial</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
         </nav>
         {children}
