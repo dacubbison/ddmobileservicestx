@@ -1,3 +1,6 @@
+'use client';
+
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -8,7 +11,7 @@ export default function Home() {
           D&D Mobile Services TX: Fix, Gleam, Thrive
         </motion.h1>
         <p className="text-xl mb-8">Texas-Proud Mobile Mastery—Auto, Detailing, Landscaping for Homes & Businesses in Montgomery County.</p>
-        <a href="/contact" className="bg-emerald-600 px-8 py-3 rounded-lg hover:bg-emerald-700">Book Free Consult – Residential or Commercial</a>
+        <Link href="/contact" className="bg-emerald-600 px-8 py-3 rounded-lg hover:bg-emerald-700">Book Free Consult – Residential or Commercial</Link>
       </section>
       <section className="py-16 px-4 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Our Texas-Strong Services</h2>
