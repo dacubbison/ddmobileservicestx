@@ -1,15 +1,9 @@
-export default function Contact() {
+export default function About() {
   return (
     <div className="py-16 px-4 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8">Get in Touch – Free Consult!</h1>
-      <p className="mb-4">Residential or Commercial—let&apos;s chat TX services.</p>
-      {/* Form placeholder – add real form later */}
-      <form className="space-y-4">
-        <input type="text" placeholder="Name" className="w-full p-2 border" />
-        <input type="email" placeholder="Email" className="w-full p-2 border" />
-        <textarea placeholder="Message" className="w-full p-2 border h-32" />
-        <button type="submit" className="bg-emerald-600 text-white px-4 py-2 rounded">Send</button>
-      </form>
+      <h1 className="text-3xl font-bold mb-8">Our Texas-Strong Story</h1>
+      <p className="mb-4">Montgomery County pros since 2025—family-owned, mobile mastery in auto, detailing, and landscaping. We&apos;re all about that TX pride and hustle.</p>
+      <p className="mb-4">From humble beginnings to empire-building—let&apos;s grow together!</p>
     </div>
   );
 }
