@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="py-16 px-4 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-8">Get in Touch – Free Consult!</h1>
-      <p className="mb-4">Residential or Commercial—let's chat TX services.</p>
+      <p className="mb-4">Residential or Commercial—let&apos;s chat TX services.</p>
       {/* Form placeholder – add real form later */}
       <form className="space-y-4">
         <input type="text" placeholder="Name" className="w-full p-2 border" />
