@@ -14,7 +14,7 @@ export default function ContactPage() {
         transition={{ duration: 0.5 }}
         className="text-center text-green-600"
       >
-        Awesome! Message sent—we'll hit you back ASAP for that free audit.
+        Awesome! Message sent—we&apos;ll hit you back ASAP for that free audit.
       </motion.p>
     );
   }
